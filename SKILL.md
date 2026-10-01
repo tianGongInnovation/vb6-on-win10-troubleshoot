@@ -2,12 +2,12 @@
 name: vb6-on-win10-troubleshoot
 description: 解决一个老问题：用 VB6（Visual Basic 6.0，微软 1998 年推出的老牌编程工具，至今仍有大量企业在用）编写的程序，在 Windows 10 / Windows 11 电脑上装不上、打不开、一启动就报错。典型报错如“VB6EXT.OLB 不能被加载”“意外错误，程序退出”，还有 VB6 工程打不开、VBA 运行时异常、安装过程卡死等；系统更新、调整或恢复镜像之后，问题可能莫名其妙再次出现，甚至个别 Word 文件打开时也报同样的错误——它们其实指向同一个系统级根因。这类老软件故障，大模型在学习阶段接触过大量微软底层资料、国外用户经验和相关文献，排查起来很简单；本技能把实测过的解决过程固化为五步排查法：第一步修注册表的兼容层设置，约 10 分钟解决最常见的两类报错，覆盖大多数情况；第二步做简单常规修复（补缺失文件、对齐版本）；第三步把第一步再跑一遍；第四步重装系统后按实录手动配置安装 VB6，解决安装卡死；第五步装好后若再现同样报错，回到第一步做法收尾。五步闭环，通常到第二步就解决了，不需要您懂编程，智能体会一步一步带着做。适合：还在用 VB6 开发维护老系统的码农、打不开老旧管理软件（财务、档案、生产等）的使用者。触发词：VB6 不能启动、VB6 启动报错、VB6EXT.OLB 不能被加载、VB6 兼容、Win10 运行 VB6、VB6 错误退出。
 agent_created: true
-version: 1.2.5
+version: 1.2.6
 author: 天工创新坊
 license: CC BY 4.0
 display_name: "新装 VB6 启动故障排查"
 display_name_en: VB6 on Win10/11 Troubleshoot
-trigger: ["VB6 不能启动", "VB6 启动报错", "VB6EXT.OLB 不能被加载", "VB6 兼容", "VB6 错误退出"]
+trigger: ["VB6 不能启动", "VB6 启动报错", "VB6EXT.OLB 不能被加载", "VB6 兼容", "VB6 错误退出", "VB6 won't start", "VB6 startup error", "VB6EXT.OLB cannot be loaded", "VB6 compatibility", "VB6 unexpected error quitting"]
 description_zh: "VB6 在 Windows 10/11 上启动报错、打不开的五步排查：先修注册表兼容层设置（约 10 分钟，解决最常见的一类报错），不行再做常规简单修复，最后才考虑重装系统，五步走完即可收敛"
 description_en: "Five-step troubleshooting for VB6 startup failures on Windows 10/11: fix the registry compatibility-layer setting first (about 10 minutes, resolves the most common error), then try simple repairs, and reinstall Windows only as a last resort"
 category: development
